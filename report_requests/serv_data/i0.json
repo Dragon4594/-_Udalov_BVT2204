@@ -1,0 +1,69 @@
+[
+  [
+    "time: 2026-01-31 00:02:45.860454"
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [223, 349, 531, 490]",
+    "Probability: 0.99",
+    "==============="
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [481, 324, 660, 411]",
+    "Probability: 0.89",
+    "==============="
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [739, 318, 782, 350]",
+    "Probability: 0.72",
+    "==============="
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [639, 325, 725, 376]",
+    "Probability: 0.58",
+    "==============="
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [726, 316, 781, 361]",
+    "Probability: 0.32",
+    "==============="
+  ],
+  [
+    [
+      [
+        "car",
+        5
+      ],
+      [
+        "threewheel",
+        0
+      ],
+      [
+        "bus",
+        0
+      ],
+      [
+        "truck",
+        0
+      ],
+      [
+        "motorbike",
+        0
+      ],
+      [
+        "van",
+        0
+      ]
+    ],
+    "cars_detected: 6"
+  ],
+  [
+    "original_img_directory: ./static/uploads/i10.jpg",
+    "normalized_img_directory: ./static/uploads/i10_norm.jpg",
+    "augmented_img_directory: ./static/uploads/i10_aug.jpg"
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  [
+    "time: 2026-01-31 00:03:33.077262"
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [224, 347, 531, 487]",
+    "Probability: 0.98",
+    "==============="
+  ],
+  [
+    "Object type: car",
+    "Coordinates: [479, 318, 663, 410]",
+    "Probability: 0.63",
+    "==============="
+  ],
+  [
+    [
+      [
+        "car",
+        2
+      ],
+      [
+        "threewheel",
+        0
+      ],
+      [
+        "bus",
+        0
+      ],
+      [
+        "truck",
+        0
+      ],
+      [
+        "motorbike",
+        0
+      ],
+      [
+        "van",
+        0
+      ]
+    ],
+    "cars_detected: 6"
+  ],
+  [
+    "original_img_directory: ./static/uploads/i10_aug.jpg",
+    "normalized_img_directory: ./static/uploads/i10_aug_norm.jpg",
+    "augmented_img_directory: ./static/uploads/i10_aug_aug.jpg"
+  ]
+]

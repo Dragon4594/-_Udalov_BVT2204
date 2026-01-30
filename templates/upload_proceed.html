@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Bigus Truckus</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+</head>
+<body>
+<p><h1 align="center">Загрузи файл для поиска машин на парковке</h1></p>
+<div class="container">
+<div class="row">
+    <h2>Выберите файл для загрузки</h2>
+    <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </p>
+    {% if filename %}
+        <div>
+            <img src="{{ url_for('display_image', filename=filename) }}">
+        </div>
+        <dl>
+            <input type="hidden" name="persistent_img" value="{{filename}}" inert>
+
+        </dl>
+        <dl>
+            <input type="hidden" name="otchet" value="{{otchet}}" inert>
+            <h3>
+                {{otchet}}
+            </h3>
+        </dl>
+    <h4></h4>
+    {% endif %}
+    <form method="post" action="/" enctype="multipart/form-data">
+        {% if not filename %}
+        <dl>
+            <p>
+                <input type="file" name="file" class="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        {% endif %}
+        <div class="inline-block">
+            <p>
+                <input type="submit" name="Submit-File" value="Загрузить файл" class="btn btn-info">
+                <input type="submit" name="Check-File" value="Обработать файл" class="btn btn-info">
+                <input type="submit" name="Img-Report" value="Получить отчёт" class="btn btn-info">
+            </p>
+        </div>
+        {% if filename %}
+        <dl>
+            <input type="hidden" name="persistent_img" value="{{filename}}" inert>
+        </dl>
+        {% endif %}
+    </form>
+</div>
+</div>
+</body>
+</html>
